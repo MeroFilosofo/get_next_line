@@ -6,7 +6,7 @@
 /*   By: ivromero <ivromero@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/16 00:20:59 by ivromero          #+#    #+#             */
-/*   Updated: 2023/12/28 20:01:29 by ivromero         ###   ########.fr       */
+/*   Updated: 2023/12/28 20:28:17 by ivromero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ static char	*ft_fill_buffer(int fd, char *rest)
 
 char	*get_next_line(int fd)
 {
-	static char	*buffer[5000];
+	static char	*buffer[OPEN_MAX];
 	char		*line;
 
 	if ((fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0) && buffer[fd])
