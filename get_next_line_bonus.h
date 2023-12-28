@@ -6,7 +6,7 @@
 /*   By: ivromero <ivromero@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/16 00:21:10 by ivromero          #+#    #+#             */
-/*   Updated: 2023/12/28 20:01:51 by ivromero         ###   ########.fr       */
+/*   Updated: 2023/12/28 20:26:09 by ivromero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <unistd.h>
+# include <sys/syslimits.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
