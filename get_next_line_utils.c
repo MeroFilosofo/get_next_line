@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivromero <ivromero@student.45urduli>       +#+  +:+       +#+        */
+/*   By: ivromero <ivromero@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/16 00:20:50 by ivromero          #+#    #+#             */
-/*   Updated: 2023/12/28 01:50:58 by ivromero         ###   ########.fr       */
+/*   Updated: 2023/12/28 19:39:11 by ivromero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,8 +63,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	while (*s2)
 		*(str++) = *(s2++);
 	*str = '\0';
-	//free((char *)s1);
-	//free((char *)s2);
 	return (pstr);
 }
 
